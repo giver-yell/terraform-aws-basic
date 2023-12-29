@@ -9,4 +9,10 @@ resource "aws_instance" "hello-world" {
   tags = {
     Name = "HelloWorld"
   }
+
+  user_data = <<EOF
+#!/bin/bash
+amazon-linux-extras install -y nginx1.24
+systemctl start nginx
+EOF
 }
