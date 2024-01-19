@@ -9,6 +9,12 @@ terraform {
       version = "~> 5.31"
     }
   }
+  backend "s3" {
+    bucket  = "tastylog-tfstate-bucket-ryohei"
+    key     = "tastylog-dev.tfstate"
+    region  = "ap-northeast-1"
+    profile = "ryohei_IAM_IC"
+  }
 }
 
 # --------------------------
