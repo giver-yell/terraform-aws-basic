@@ -37,3 +37,7 @@ variable "environment" {
 
 }
 
+variable "domain" {
+  type = string
+}
+
