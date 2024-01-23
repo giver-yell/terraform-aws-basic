@@ -21,8 +21,14 @@ terraform {
 # Provider
 # --------------------------
 provider "aws" {
-  # profile = "terraform"
-  region = "ap-northeast-1"
+  # profile = "ryohei_IAM_IC"
+  region  = "ap-northeast-1"
+}
+
+provider "aws" {
+  alias   = "virginia"
+  # profile = "ryohei_IAM_IC"
+  region  = "us-east-1"
 }
 
 # --------------------------
