@@ -22,13 +22,13 @@ terraform {
 # --------------------------
 provider "aws" {
   # profile = "ryohei_IAM_IC"
-  region  = "ap-northeast-1"
+  region = "ap-northeast-1"
 }
 
 provider "aws" {
-  alias   = "virginia"
+  alias = "virginia"
   # profile = "ryohei_IAM_IC"
-  region  = "us-east-1"
+  region = "us-east-1"
 }
 
 # --------------------------
